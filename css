@@ -1,0 +1,61 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .row {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 90%;
+    overflow: hidden;
+  }
+  
+  .section {
+    box-sizing: border-box;
+    width: 33.33%;
+    float: left;
+    padding: 50px;
+    margin: 10px;
+    border: 1px solid #000;
+    background-color: #817c7c;
+    position: relative;
+  }
+  
+  .section h2 {
+    font-size: 18px;
+  }
+  
+  .section p {
+    font-size: 14px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .section {
+      width: 50%;
+    }
+    
+    .section:nth-child(3) {
+      width: 100%;
+      clear: both;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+  }
+  
